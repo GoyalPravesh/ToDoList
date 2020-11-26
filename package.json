@@ -2,7 +2,7 @@
   "name": "firstapp",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://GoyalPravesh.github.io/ToDoList",
+  "homepage":"https://GoyalPravesh.github.io/ToDoList",
   "dependencies": {
     "-": "0.0.1",
     "@material-ui/core": "^4.11.0",
@@ -18,12 +18,13 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-      "predeploy" : "npm run build",
-      "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
+      
       
   },
   "eslintConfig": {
